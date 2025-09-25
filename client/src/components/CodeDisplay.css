@@ -1,0 +1,182 @@
+.code-display {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.code-header {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.code-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.title-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #81e6d9;
+}
+
+.code-title h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.language-badge {
+  background: rgba(129, 230, 217, 0.2);
+  color: #81e6d9;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(129, 230, 217, 0.3);
+}
+
+.code-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.action-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+}
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.action-btn:active {
+  transform: translateY(0);
+}
+
+.btn-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.expand-btn {
+  background: rgba(129, 230, 217, 0.2);
+  border-color: rgba(129, 230, 217, 0.3);
+}
+
+.expand-btn:hover {
+  background: rgba(129, 230, 217, 0.3);
+  border-color: rgba(129, 230, 217, 0.4);
+}
+
+.prompt-info {
+  background: #f7fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #4a5568;
+}
+
+.prompt-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.prompt-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.code-container {
+  overflow: hidden;
+}
+
+.code-wrapper {
+  max-height: 600px;
+  overflow-y: auto;
+  background: #1e1e1e;
+}
+
+.code-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.code-wrapper::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.code-wrapper::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.code-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Custom scrollbar for Firefox */
+.code-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #2d2d2d;
+}
+
+@media (max-width: 768px) {
+  .code-header {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  
+  .code-title {
+    justify-content: center;
+  }
+  
+  .code-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .prompt-info {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .prompt-text {
+    font-size: 0.85rem;
+  }
+  
+  .code-wrapper {
+    max-height: 400px;
+  }
+}
