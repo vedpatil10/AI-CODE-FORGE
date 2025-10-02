@@ -1,4 +1,4 @@
-# AI Code Generator
+# AI Code Forge
 
 A full-stack application that generates code using AI based on text prompts. Built with React frontend and Node.js backend.
 
